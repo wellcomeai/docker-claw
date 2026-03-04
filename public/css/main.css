@@ -6,7 +6,8 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 100%);
+    background-attachment: fixed;
     min-height: 100vh;
     padding: 20px;
 }
@@ -17,46 +18,51 @@ body {
 }
 
 .header {
-    background: white;
+    background: #16162e;
     border-radius: 12px;
     padding: 30px;
     margin-bottom: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border: 1px solid #2d2d5e;
 }
 
 .header h1 {
-    color: #333;
+    color: #e2e8f0;
     margin-bottom: 10px;
     font-size: 32px;
 }
 
 .header p {
-    color: #666;
+    color: #94a3b8;
     font-size: 14px;
 }
 
 .auth-section {
-    background: white;
+    background: #16162e;
     border-radius: 12px;
     padding: 40px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    color: #e2e8f0;
+    border: 1px solid #2d2d5e;
 }
 
 .auth-section input {
     padding: 15px 20px;
     font-size: 16px;
-    border: 2px solid #ddd;
+    border: 2px solid #2d2d5e;
     border-radius: 8px;
     width: 100%;
     max-width: 400px;
     margin-bottom: 15px;
+    background: #0a0a1a;
+    color: #e2e8f0;
 }
 
 .auth-section button {
     padding: 15px 40px;
     font-size: 16px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
     color: white;
     border: none;
     border-radius: 8px;
@@ -74,21 +80,22 @@ body {
 }
 
 .nav-tabs {
-    background: white;
+    background: #12122a;
     border-radius: 12px;
     padding: 10px;
     margin-bottom: 20px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border: 1px solid #2d2d5e;
 }
 
 .nav-tabs a {
     padding: 12px 24px;
     border: none;
     background: transparent;
-    color: #666;
+    color: #94a3b8;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 500;
@@ -96,19 +103,22 @@ body {
 }
 
 .nav-tabs a:hover {
-    background: #f0f0f0;
+    background: #1e1e3f;
+    color: #e2e8f0;
 }
 
 .nav-tabs a.active {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
     color: white;
 }
 
 .panel {
-    background: white;
+    background: #16162e;
     border-radius: 12px;
     padding: 25px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    color: #e2e8f0;
+    border: 1px solid #2d2d5e;
 }
 
 .panel.full-width {
@@ -116,7 +126,7 @@ body {
 }
 
 .panel h2 {
-    color: #333;
+    color: #e2e8f0;
     margin-bottom: 20px;
     font-size: 24px;
     display: flex;
@@ -132,33 +142,33 @@ body {
 }
 
 .person-card {
-    border: 2px solid #e0e0e0;
+    border: 1px solid #2d2d5e;
     border-radius: 12px;
     padding: 20px;
     cursor: pointer;
     transition: all 0.3s;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: #12122a;
 }
 
 .person-card:hover {
-    border-color: #667eea;
+    border-color: #7c3aed;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2);
 }
 
 .person-card.active {
-    border-color: #667eea;
-    background: linear-gradient(135deg, #e7f0ff 0%, #d4e5ff 100%);
+    border-color: #7c3aed;
+    background: #1e1e3f;
 }
 
 .person-card h3 {
-    color: #333;
+    color: #e2e8f0;
     margin-bottom: 8px;
     font-size: 18px;
 }
 
 .person-card p {
-    color: #666;
+    color: #94a3b8;
     font-size: 14px;
     margin-bottom: 10px;
 }
@@ -193,7 +203,7 @@ body {
 }
 
 .editor-header h3 {
-    color: #333;
+    color: #e2e8f0;
     font-size: 20px;
 }
 
@@ -206,8 +216,10 @@ textarea.editor {
     width: 100%;
     min-height: 400px;
     padding: 15px;
-    border: 2px solid #ddd;
+    border: 2px solid #2d2d5e;
     border-radius: 8px;
+    background: #0a0a1a;
+    color: #e2e8f0;
     font-family: 'Monaco', 'Courier New', monospace;
     font-size: 14px;
     line-height: 1.6;
@@ -216,7 +228,7 @@ textarea.editor {
 
 textarea.editor:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #7c3aed;
 }
 
 .btn {
@@ -232,23 +244,24 @@ textarea.editor:focus {
 }
 
 .btn-primary {
-    background: #667eea;
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
     color: white;
 }
 
 .btn-success {
-    background: #51cf66;
+    background: #10b981;
     color: white;
 }
 
 .btn-danger {
-    background: #ff6b6b;
+    background: #ef4444;
     color: white;
 }
 
 .btn-secondary {
-    background: #868e96;
-    color: white;
+    background: #1e1e3f;
+    border: 1px solid #2d2d5e;
+    color: #94a3b8;
 }
 
 .btn:hover {
@@ -257,20 +270,22 @@ textarea.editor:focus {
 }
 
 .session-info {
-    background: #f8f9fa;
+    background: #12122a;
+    border: 1px solid #2d2d5e;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.8;
+    color: #e2e8f0;
 }
 
 .session-info strong {
-    color: #667eea;
+    color: #a855f7;
 }
 
 .upload-zone {
-    border: 2px dashed #ddd;
+    border: 2px dashed #2d2d5e;
     border-radius: 8px;
     padding: 40px;
     text-align: center;
@@ -280,8 +295,8 @@ textarea.editor:focus {
 }
 
 .upload-zone:hover {
-    border-color: #667eea;
-    background: #f8f9fa;
+    border-color: #7c3aed;
+    background: #1e1e3f;
 }
 
 .file-list {
@@ -290,7 +305,7 @@ textarea.editor:focus {
 }
 
 .file-accordion {
-    border: 1px solid #e9ecef;
+    border: 1px solid #2d2d5e;
     border-radius: 8px;
     margin-bottom: 8px;
     overflow: hidden;
@@ -305,14 +320,15 @@ textarea.editor:focus {
     align-items: center;
     justify-content: space-between;
     padding: 12px 16px;
-    background: #f8f9fa;
+    background: #12122a;
     cursor: pointer;
     user-select: none;
     transition: background 0.2s;
+    color: #e2e8f0;
 }
 
 .accordion-header:hover {
-    background: #e9ecef;
+    background: #1e1e3f;
 }
 
 .accordion-header .folder-label {
@@ -320,7 +336,7 @@ textarea.editor:focus {
     align-items: center;
     gap: 10px;
     font-weight: 600;
-    color: #333;
+    color: #e2e8f0;
 }
 
 .accordion-header .folder-label .folder-icon {
@@ -333,8 +349,8 @@ textarea.editor:focus {
 }
 
 .accordion-header .badge {
-    background: #dee2e6;
-    color: #495057;
+    background: #1e1e3f;
+    color: #94a3b8;
     padding: 2px 8px;
     border-radius: 10px;
     font-size: 12px;
@@ -393,8 +409,8 @@ textarea.editor:focus {
 
 .accordion-inner {
     padding: 4px 0;
-    background: #fff;
-    border-top: 1px solid #eee;
+    background: #0a0a1a;
+    border-top: 1px solid #2d2d5e;
 }
 
 .file-item {
@@ -402,7 +418,7 @@ textarea.editor:focus {
     align-items: center;
     justify-content: space-between;
     padding: 6px 12px 6px 24px;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #1e1e3f;
     transition: background 0.2s;
     font-size: 13px;
 }
@@ -412,11 +428,11 @@ textarea.editor:focus {
 }
 
 .file-item:hover {
-    background: #f8f9fa;
+    background: #1e1e3f;
 }
 
 .file-item.selected {
-    background: #e7f0ff;
+    background: #1e1e3f;
 }
 
 .file-info {
@@ -431,20 +447,20 @@ textarea.editor:focus {
     width: 16px;
     height: 16px;
     cursor: pointer;
-    accent-color: #667eea;
+    accent-color: #7c3aed;
 }
 
 .folder-checkbox {
     width: 14px;
     height: 14px;
     cursor: pointer;
-    accent-color: #667eea;
+    accent-color: #7c3aed;
 }
 
 .bulk-actions {
     display: none;
-    background: #fff3cd;
-    border: 1px solid #ffc107;
+    background: #1a150a;
+    border: 1px solid #f59f00;
     border-radius: 8px;
     padding: 12px 16px;
     margin-bottom: 15px;
@@ -458,7 +474,7 @@ textarea.editor:focus {
 
 .bulk-actions .selected-count {
     font-weight: 600;
-    color: #856404;
+    color: #f59f00;
 }
 
 .bulk-actions .btn {
@@ -471,7 +487,7 @@ textarea.editor:focus {
 
 .file-name {
     font-weight: 500;
-    color: #333;
+    color: #e2e8f0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -489,14 +505,14 @@ textarea.editor:focus {
 
 .empty-folder {
     padding: 8px 12px 8px 24px;
-    color: #999;
+    color: #94a3b8;
     font-size: 13px;
-    background: #fafafa;
+    background: #0a0a1a;
 }
 
 .tree-folder {
     margin-left: 16px;
-    border-left: 1px dashed #ddd;
+    border-left: 1px dashed #2d2d5e;
 }
 
 .tree-folder-header {
@@ -506,12 +522,12 @@ textarea.editor:focus {
     cursor: pointer;
     font-size: 13px;
     font-weight: 600;
-    color: #444;
+    color: #e2e8f0;
     transition: background 0.2s;
 }
 
 .tree-folder-header:hover {
-    background: #f8f9fa;
+    background: #1e1e3f;
 }
 
 .tree-folder-header .folder-icon {
@@ -536,7 +552,8 @@ textarea.editor:focus {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #333;
+    background: #1e1e3f;
+    border: 1px solid #2d2d5e;
     color: white;
     padding: 15px 25px;
     border-radius: 8px;
@@ -557,20 +574,21 @@ textarea.editor:focus {
 }
 
 .toast.success {
-    background: #51cf66;
+    background: #10b981;
 }
 
 .toast.error {
-    background: #ff6b6b;
+    background: #ef4444;
 }
 
 .template-hint {
-    background: #fff9db;
-    border-left: 4px solid #ffd43b;
+    background: #1a150a;
+    border-left: 4px solid #f59f00;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 4px;
     font-size: 14px;
+    color: #d4a017;
 }
 
 .template-hint strong {
@@ -589,20 +607,20 @@ input[type="file"] {
 }
 
 .channel-card {
-    border: 2px solid #e0e0e0;
+    border: 1px solid #2d2d5e;
     border-radius: 12px;
     padding: 24px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: #12122a;
     transition: all 0.3s;
 }
 
 .channel-card:hover {
-    border-color: #667eea;
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+    border-color: #7c3aed;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2);
 }
 
 .channel-card h3 {
-    color: #333;
+    color: #e2e8f0;
     margin-bottom: 8px;
     font-size: 18px;
     display: flex;
@@ -611,7 +629,7 @@ input[type="file"] {
 }
 
 .channel-card p {
-    color: #666;
+    color: #94a3b8;
     font-size: 14px;
     margin-bottom: 16px;
 }
@@ -620,7 +638,7 @@ input[type="file"] {
     display: block;
     font-size: 13px;
     font-weight: 600;
-    color: #495057;
+    color: #94a3b8;
     margin-bottom: 6px;
 }
 
@@ -631,14 +649,16 @@ select {
     width: 100%;
     padding: 12px 14px;
     font-size: 14px;
-    border: 2px solid #ddd;
+    border: 2px solid #2d2d5e;
     border-radius: 8px;
     margin-bottom: 12px;
+    background: #0a0a1a;
+    color: #e2e8f0;
 }
 
 .channel-card input:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #7c3aed;
 }
 
 .page-grid {
@@ -665,16 +685,17 @@ select {
 }
 
 .console-info {
-    background: #e7f5ff;
-    border-left: 4px solid #339af0;
+    background: #0f1729;
+    border-left: 4px solid #3b82f6;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 4px;
     font-size: 14px;
+    color: #94a3b8;
 }
 
 .console-info code {
-    background: #d0ebff;
+    background: #1e1e3f;
     padding: 2px 8px;
     border-radius: 4px;
     font-family: 'Monaco', 'Courier New', monospace;
@@ -683,11 +704,11 @@ select {
 
 /* Светлая тема консоли (по умолчанию) */
 .terminal-container {
-    background: #ffffff;
+    background: #0f0f1e;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border: 2px solid #e9ecef;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    border: 2px solid #2d2d5e;
 }
 
 .terminal {
@@ -697,8 +718,8 @@ select {
 }
 
 .terminal-output {
-    background: #ffffff;
-    color: #333;
+    background: #0f0f1e;
+    color: #e2e8f0;
     padding: 20px;
     min-height: 200px;
     max-height: 300px;
@@ -712,16 +733,16 @@ select {
 }
 
 .terminal-output::-webkit-scrollbar-track {
-    background: #f8f9fa;
+    background: #0a0a1a;
 }
 
 .terminal-output::-webkit-scrollbar-thumb {
-    background: #dee2e6;
+    background: #2d2d5e;
     border-radius: 5px;
 }
 
 .terminal-output::-webkit-scrollbar-thumb:hover {
-    background: #adb5bd;
+    background: #4a4a8a;
 }
 
 .terminal-line {
@@ -729,17 +750,17 @@ select {
 }
 
 .terminal-line.command {
-    color: #495057;
+    color: #a855f7;
     font-weight: 600;
 }
 
 .terminal-line.command-line {
-    color: #495057;
+    color: #a855f7;
     font-weight: 600;
 }
 
 .terminal-line.output {
-    color: #333;
+    color: #e2e8f0;
 }
 
 .terminal-line.error {
@@ -759,13 +780,13 @@ select {
 .terminal-input-line {
     display: flex;
     align-items: center;
-    background: #f8f9fa;
+    background: #12122a;
     padding: 15px 20px;
-    border-top: 2px solid #e9ecef;
+    border-top: 2px solid #2d2d5e;
 }
 
 .terminal-prompt {
-    color: #495057;
+    color: #a855f7;
     font-weight: 600;
     margin-right: 10px;
     user-select: none;
@@ -783,11 +804,11 @@ select {
     flex: 1;
     background: transparent;
     border: none;
-    color: #333;
+    color: #e2e8f0;
     font-family: inherit;
     font-size: inherit;
     outline: none;
-    caret-color: #333;
+    caret-color: #e2e8f0;
 }
 
 .terminal-input::placeholder {
@@ -801,7 +822,7 @@ select {
 /* Тёмная тема консоли */
 .terminal-container.dark-theme {
     background: #1e1e1e;
-    border-color: #3e3e42;
+    border-color: #2d2d5e;
 }
 
 .terminal-container.dark-theme .terminal-output {
@@ -874,10 +895,10 @@ select {
     align-items: center;
     margin-top: 15px;
     padding: 10px 15px;
-    background: #f8f9fa;
+    background: #12122a;
     border-radius: 8px;
     font-size: 13px;
-    color: #666;
+    color: #94a3b8;
 }
 
 .status-indicator {
@@ -912,7 +933,8 @@ select {
 }
 
 .stat-item {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: #0a0a1a;
+    border: 1px solid #2d2d5e;
     border-radius: 8px;
     padding: 15px;
     text-align: center;
@@ -920,14 +942,14 @@ select {
 
 .stat-label {
     font-size: 12px;
-    color: #666;
+    color: #94a3b8;
     margin-bottom: 5px;
 }
 
 .stat-value {
     font-size: 20px;
     font-weight: 700;
-    color: #333;
+    color: #e2e8f0;
 }
 
 .top-files-list {
@@ -942,29 +964,29 @@ select {
     padding: 8px 12px;
     border-radius: 6px;
     margin-bottom: 4px;
-    background: #f8f9fa;
+    background: #0a0a1a;
     font-size: 13px;
 }
 
 .top-file-item:hover {
-    background: #e9ecef;
+    background: #1e1e3f;
 }
 
 .top-file-rank {
     font-weight: 600;
-    color: #667eea;
+    color: #a855f7;
     min-width: 25px;
 }
 
 .top-file-size {
     font-weight: 600;
-    color: #333;
+    color: #e2e8f0;
     min-width: 60px;
     font-family: 'Monaco', 'Courier New', monospace;
 }
 
 .top-file-path {
-    color: #666;
+    color: #94a3b8;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -985,29 +1007,29 @@ select {
 
 .category-title {
     font-size: 18px;
-    color: #333;
+    color: #e2e8f0;
     margin-bottom: 15px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #e9ecef;
+    border-bottom: 2px solid #2d2d5e;
 }
 
 .skill-card {
-    border: 2px solid #e0e0e0;
+    border: 1px solid #2d2d5e;
     border-radius: 12px;
     padding: 20px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: #12122a;
     transition: all 0.3s;
 }
 
 .skill-card:hover {
-    border-color: #667eea;
+    border-color: #7c3aed;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2);
 }
 
 .skill-card.selected {
-    border-color: #51cf66;
-    background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+    border-color: #10b981;
+    background: #0f1f1a;
 }
 
 .skill-header {
@@ -1032,13 +1054,13 @@ select {
 .skill-name {
     font-size: 16px;
     font-weight: 600;
-    color: #333;
+    color: #e2e8f0;
     margin: 0;
     line-height: 1.3;
 }
 
 .skill-desc {
-    color: #666;
+    color: #94a3b8;
     font-size: 14px;
     margin-bottom: 12px;
     line-height: 1.5;
@@ -1052,8 +1074,8 @@ select {
 }
 
 .skill-tag {
-    background: #e9ecef;
-    color: #495057;
+    background: #1e1e3f;
+    color: #94a3b8;
     padding: 3px 10px;
     border-radius: 12px;
     font-size: 12px;
@@ -1066,7 +1088,7 @@ select {
     gap: 10px;
     flex-wrap: wrap;
     padding-top: 12px;
-    border-top: 1px solid #dee2e6;
+    border-top: 1px solid #2d2d5e;
 }
 
 .skill-visibility {
@@ -1077,12 +1099,12 @@ select {
 }
 
 .skill-visibility.public {
-    background: #e7f5ff;
-    color: #1971c2;
+    background: #0f1729;
+    color: #3b82f6;
 }
 
 .skill-visibility.private {
-    background: #fff9db;
+    background: #1a150a;
     color: #f59f00;
 }
 
@@ -1103,7 +1125,7 @@ select {
 
 .btn-view, .btn-edit {
     background: transparent;
-    border: 1px solid #dee2e6;
+    border: 1px solid #2d2d5e;
     border-radius: 6px;
     padding: 6px 10px;
     cursor: pointer;
@@ -1112,13 +1134,13 @@ select {
 }
 
 .btn-view:hover, .btn-edit:hover {
-    background: #f8f9fa;
-    border-color: #667eea;
+    background: #1e1e3f;
+    border-color: #7c3aed;
 }
 
 .btn-delete {
     background: transparent;
-    border: 1px solid #dee2e6;
+    border: 1px solid #2d2d5e;
     border-radius: 6px;
     padding: 6px 10px;
     cursor: pointer;
@@ -1127,8 +1149,8 @@ select {
 }
 
 .btn-delete:hover {
-    background: #fff5f5;
-    border-color: #ff6b6b;
+    background: #1a0a0a;
+    border-color: #ef4444;
 }
 
 /* Мета-информация о навыке */
@@ -1138,7 +1160,7 @@ select {
     gap: 8px;
     margin-bottom: 12px;
     padding: 10px;
-    background: #fff;
+    background: #0a0a1a;
     border-radius: 8px;
     font-size: 12px;
 }
@@ -1155,12 +1177,12 @@ select {
 }
 
 .skill-meta-value {
-    color: #333;
+    color: #e2e8f0;
     font-weight: 600;
 }
 
 .skill-meta-value code {
-    background: #f1f3f5;
+    background: #1e1e3f;
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 11px;
@@ -1168,8 +1190,8 @@ select {
 
 /* Превью системного промпта */
 .skill-prompt-preview {
-    background: #f8f9fa;
-    border-left: 3px solid #667eea;
+    background: #0a0a1a;
+    border-left: 3px solid #7c3aed;
     padding: 10px 12px;
     border-radius: 0 8px 8px 0;
     margin-bottom: 12px;
@@ -1177,13 +1199,13 @@ select {
 }
 
 .skill-prompt-preview strong {
-    color: #495057;
+    color: #e2e8f0;
     display: block;
     margin-bottom: 4px;
 }
 
 .skill-prompt-preview p {
-    color: #666;
+    color: #94a3b8;
     margin: 0;
     line-height: 1.4;
 }
@@ -1222,10 +1244,10 @@ select {
 
 .tasks-filter-btn {
     padding: 6px 14px;
-    border: 1.5px solid #dee2e6;
+    border: 1.5px solid #2d2d5e;
     border-radius: 20px;
-    background: #fff;
-    color: #495057;
+    background: #12122a;
+    color: #94a3b8;
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
@@ -1236,12 +1258,12 @@ select {
 }
 
 .tasks-filter-btn:hover {
-    border-color: #667eea;
-    color: #667eea;
+    border-color: #7c3aed;
+    color: #a855f7;
 }
 
 .tasks-filter-btn.active {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
     border-color: transparent;
     color: #fff;
 }
@@ -1255,16 +1277,16 @@ select {
 }
 
 .tasks-filter-btn:not(.active) .filter-count {
-    background: #e9ecef;
-    color: #868e96;
+    background: #1e1e3f;
+    color: #94a3b8;
 }
 
 /* Карточка задачи */
 .task-card-new {
-    border: 2px solid #e9ecef;
+    border: 1px solid #2d2d5e;
     border-radius: 14px;
     padding: 20px;
-    background: #fff;
+    background: #12122a;
     transition: box-shadow 0.2s, border-color 0.2s;
     display: flex;
     flex-direction: column;
@@ -1272,16 +1294,16 @@ select {
 }
 
 .task-card-new:hover {
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    border-color: #d0d7ff;
+    box-shadow: 0 6px 20px rgba(124,58,237,0.15);
+    border-color: #7c3aed;
 }
 
 /* Цветная полоска слева по статусу */
-.task-card-new.status-in-progress { border-left: 4px solid #667eea; }
-.task-card-new.status-done        { border-left: 4px solid #51cf66; }
-.task-card-new.status-failed      { border-left: 4px solid #ff6b6b; }
+.task-card-new.status-in-progress { border-left: 4px solid #7c3aed; }
+.task-card-new.status-done        { border-left: 4px solid #10b981; }
+.task-card-new.status-failed      { border-left: 4px solid #ef4444; }
 .task-card-new.status-paused      { border-left: 4px solid #ffd43b; }
-.task-card-new.status-unknown     { border-left: 4px solid #dee2e6; }
+.task-card-new.status-unknown     { border-left: 4px solid #2d2d5e; }
 
 /* Шапка карточки */
 .task-card-header {
@@ -1302,7 +1324,7 @@ select {
 .task-card-goal {
     font-size: 14px;
     font-weight: 600;
-    color: #222;
+    color: #e2e8f0;
     line-height: 1.4;
     /* Обрезаем длинные цели до 2 строк */
     display: -webkit-box;
@@ -1350,7 +1372,7 @@ select {
 .task-progress-bg {
     flex: 1;
     height: 6px;
-    background: #e9ecef;
+    background: #1e1e3f;
     border-radius: 99px;
     overflow: hidden;
 }
@@ -1364,7 +1386,7 @@ select {
 .task-progress-pct {
     font-size: 12px;
     font-weight: 700;
-    color: #495057;
+    color: #94a3b8;
     min-width: 34px;
     text-align: right;
     font-family: 'Monaco', 'Courier New', monospace;
@@ -1378,7 +1400,7 @@ select {
 }
 
 .task-metric {
-    background: #f8f9fa;
+    background: #0a0a1a;
     border-radius: 8px;
     padding: 7px 8px;
     text-align: center;
@@ -1395,18 +1417,18 @@ select {
 .task-metric-value {
     font-size: 15px;
     font-weight: 700;
-    color: #333;
+    color: #e2e8f0;
     font-family: 'Monaco', 'Courier New', monospace;
 }
 
 /* Активный шаг */
 .task-active-step {
-    background: #eef2ff;
-    border-left: 3px solid #667eea;
+    background: #1e1e3f;
+    border-left: 3px solid #7c3aed;
     border-radius: 0 8px 8px 0;
     padding: 8px 12px;
     font-size: 13px;
-    color: #4c6ef5;
+    color: #a855f7;
     font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
@@ -1418,7 +1440,7 @@ select {
     display: flex;
     flex-direction: column;
     gap: 3px;
-    background: #f8f9fa;
+    background: #0a0a1a;
     border-radius: 8px;
     padding: 8px 10px;
 }
@@ -1428,7 +1450,7 @@ select {
     align-items: center;
     gap: 8px;
     font-size: 12px;
-    color: #495057;
+    color: #94a3b8;
     line-height: 1.4;
 }
 
@@ -1471,10 +1493,10 @@ select {
 
 .task-btn {
     padding: 9px 12px;
-    border: 1.5px solid #dee2e6;
+    border: 1.5px solid #2d2d5e;
     border-radius: 10px;
-    background: #fff;
-    color: #495057;
+    background: #12122a;
+    color: #94a3b8;
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
@@ -1499,18 +1521,18 @@ select {
 }
 
 .task-btn-steps {
-    border-color: #667eea;
+    border-color: #7c3aed;
     color: #fff;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    box-shadow: 0 2px 8px rgba(102,126,234,0.25);
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
+    box-shadow: 0 2px 8px rgba(124,58,237,0.25);
 }
 
 .task-btn-steps:hover {
-    box-shadow: 0 4px 14px rgba(102,126,234,0.4);
+    box-shadow: 0 4px 14px rgba(124,58,237,0.4);
 }
 
-.task-btn-log { border-color: #cc5de8; color: #862e9c; }
-.task-btn-log:hover { background: #f8f0fc; }
+.task-btn-log { border-color: #a855f7; color: #a855f7; }
+.task-btn-log:hover { background: #1e1e3f; }
 
 /* Строка удаления зависшей задачи */
 .task-delete-row {
@@ -1519,29 +1541,29 @@ select {
 
 .task-btn-delete {
     width: 100%;
-    border-color: #ffc9c9;
-    color: #c92a2a;
-    background: #fff5f5;
+    border-color: #ef4444;
+    color: #ef4444;
+    background: #1a0a0a;
     font-size: 12px;
     padding: 7px 12px;
 }
 
 .task-btn-delete:hover {
-    background: #ffe0e0;
-    border-color: #ff6b6b;
-    box-shadow: 0 3px 10px rgba(255,107,107,0.2);
+    background: #2a0a0a;
+    border-color: #ef4444;
+    box-shadow: 0 3px 10px rgba(239,68,68,0.2);
 }
 
 /* Кнопка подтверждения удаления в диалоге */
 .task-btn-delete-confirm {
-    border-color: #ff6b6b;
+    border-color: #ef4444;
     color: #fff;
-    background: linear-gradient(135deg, #ff6b6b 0%, #c92a2a 100%);
-    box-shadow: 0 2px 8px rgba(255,107,107,0.3);
+    background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+    box-shadow: 0 2px 8px rgba(239,68,68,0.3);
 }
 
 .task-btn-delete-confirm:hover {
-    box-shadow: 0 4px 14px rgba(255,107,107,0.45);
+    box-shadow: 0 4px 14px rgba(239,68,68,0.45);
 }
 
 /* ─── Модальное окно задач ──────────────────────────────────────────────────── */
@@ -1567,7 +1589,7 @@ select {
 }
 
 .task-modal {
-    background: #fff;
+    background: #16162e;
     border-radius: 16px;
     width: 100%;
     max-width: 720px;
@@ -1589,7 +1611,7 @@ select {
     align-items: center;
     justify-content: space-between;
     padding: 16px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
     flex-shrink: 0;
 }
 
@@ -1630,17 +1652,17 @@ select {
 }
 
 .task-modal-body::-webkit-scrollbar { width: 8px; }
-.task-modal-body::-webkit-scrollbar-track { background: #f8f9fa; }
-.task-modal-body::-webkit-scrollbar-thumb { background: #dee2e6; border-radius: 4px; }
+.task-modal-body::-webkit-scrollbar-track { background: #0a0a1a; }
+.task-modal-body::-webkit-scrollbar-thumb { background: #2d2d5e; border-radius: 4px; }
 
 /* Цель задачи в модале */
 .task-modal-goal {
     padding: 14px 20px;
     font-size: 14px;
     font-weight: 600;
-    color: #333;
-    background: #f8f9fa;
-    border-bottom: 1px solid #e9ecef;
+    color: #e2e8f0;
+    background: #12122a;
+    border-bottom: 1px solid #2d2d5e;
     line-height: 1.5;
 }
 
@@ -1653,9 +1675,9 @@ select {
     padding-top: 8px;
     padding-right: 20px;
     padding-bottom: 8px;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #1e1e3f;
     font-size: 13px;
-    color: #333;
+    color: #e2e8f0;
 }
 
 .task-step-row.modal-step:last-child {
@@ -1668,24 +1690,24 @@ select {
     font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
     font-size: 12px;
     line-height: 1.7;
-    color: #333;
+    color: #94a3b8;
     white-space: pre-wrap;
     word-break: break-word;
-    background: #fafafa;
+    background: #0a0a1a;
     min-height: 200px;
     max-height: 60vh;
     overflow-y: auto;
 }
 
 .task-debug-body::-webkit-scrollbar { width: 8px; }
-.task-debug-body::-webkit-scrollbar-track { background: #f0f0f0; }
-.task-debug-body::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+.task-debug-body::-webkit-scrollbar-track { background: #0a0a1a; }
+.task-debug-body::-webkit-scrollbar-thumb { background: #2d2d5e; border-radius: 4px; }
 
 /* ─── Старые стили задач (оставляем для совместимости) ──────────────────────── */
 
 .task-card {
-    background: white;
-    border: 1px solid #ddd;
+    background: #12122a;
+    border: 1px solid #2d2d5e;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
@@ -1813,7 +1835,7 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(102, 126, 234, 0.55);
+    background: rgba(10, 10, 26, 0.75);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     opacity: 0;
@@ -1830,12 +1852,13 @@ select {
 }
 
 .init-loader-card {
-    background: #fff;
+    background: #16162e;
     border-radius: 20px;
     padding: 36px 40px;
     width: 100%;
     max-width: 480px;
-    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+    color: #e2e8f0;
     transform: translateY(20px);
     transition: transform 0.35s ease;
 }
@@ -1854,7 +1877,7 @@ select {
 .init-loader-title {
     font-size: 20px;
     font-weight: 700;
-    color: #333;
+    color: #e2e8f0;
     margin: 0 0 4px;
 }
 
@@ -1870,8 +1893,8 @@ select {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 4px solid #e9ecef;
-    border-top-color: #667eea;
+    border: 4px solid #2d2d5e;
+    border-top-color: #7c3aed;
     animation: initSpin 0.9s linear infinite;
 }
 
@@ -1890,14 +1913,14 @@ select {
 .init-progress-bar-bg {
     flex: 1;
     height: 8px;
-    background: #e9ecef;
+    background: #1e1e3f;
     border-radius: 99px;
     overflow: hidden;
 }
 
 .init-progress-bar-fill {
     height: 100%;
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(90deg, #7c3aed 0%, #2563eb 100%);
     border-radius: 99px;
     transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1905,7 +1928,7 @@ select {
 .init-progress-pct {
     font-size: 13px;
     font-weight: 700;
-    color: #667eea;
+    color: #7c3aed;
     min-width: 36px;
     text-align: right;
 }
@@ -1942,12 +1965,12 @@ select {
 }
 
 .init-step-item.active {
-    background: #f0f3ff;
-    color: #333;
+    background: #1e1e3f;
+    color: #e2e8f0;
 }
 
 .init-step-item.done {
-    color: #555;
+    color: #94a3b8;
 }
 
 /* Иконка-точка статуса */
@@ -1964,19 +1987,19 @@ select {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #dee2e6;
+    background: #2d2d5e;
     transition: background 0.2s, transform 0.2s;
 }
 
 .init-step-item.active .init-step-dot {
-    background: #667eea;
+    background: #7c3aed;
     transform: scale(1.4);
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
     animation: initPulse 1.2s ease-in-out infinite;
 }
 
 .init-step-item.done .init-step-dot {
-    background: #51cf66;
+    background: #10b981;
 }
 
 @keyframes initPulse {
@@ -2009,7 +2032,7 @@ select {
 
 .init-step-item.active .init-step-status::after {
     content: '…';
-    color: #667eea;
+    color: #7c3aed;
 }
 
 /* Сноска */
@@ -2044,7 +2067,7 @@ select {
 }
 
 .appview-modal {
-    background: #fff;
+    background: #16162e;
     border-radius: 16px;
     width: 100%;
     max-width: 1100px;
@@ -2066,7 +2089,7 @@ select {
     align-items: center;
     justify-content: space-between;
     padding: 14px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
     flex-shrink: 0;
 }
 
@@ -2110,7 +2133,7 @@ select {
 .appview-body {
     flex: 1;
     overflow: hidden;
-    background: #f0f0f0;
+    background: #0a0a1a;
 }
 
 .appview-body iframe {
@@ -2125,8 +2148,8 @@ select {
     align-items: center;
     justify-content: space-between;
     padding: 8px 16px;
-    background: #f8f9fa;
-    border-top: 1px solid #e9ecef;
+    background: #12122a;
+    border-top: 1px solid #2d2d5e;
     flex-shrink: 0;
     gap: 12px;
 }
@@ -2134,7 +2157,7 @@ select {
 .appview-url {
     font-family: 'Monaco', 'Courier New', monospace;
     font-size: 12px;
-    color: #667eea;
+    color: #a855f7;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -2164,8 +2187,8 @@ select {
 }
 
 .apps-count-badge {
-    background: #e9ecef;
-    color: #495057;
+    background: #1e1e3f;
+    color: #94a3b8;
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 13px;
@@ -2177,13 +2200,13 @@ select {
     align-items: center;
     gap: 6px;
     font-size: 13px;
-    color: #666;
+    color: #94a3b8;
 }
 
 .apps-autoupdate input[type="checkbox"] {
     width: 16px;
     height: 16px;
-    accent-color: #667eea;
+    accent-color: #7c3aed;
     margin: 0;
     padding: 0;
 }
@@ -2218,25 +2241,25 @@ select {
 }
 
 .app-card {
-    border: 2px solid #e9ecef;
+    border: 1px solid #2d2d5e;
     border-radius: 14px;
     padding: 20px;
-    background: #fff;
+    background: #12122a;
     transition: box-shadow 0.2s, border-color 0.2s;
     position: relative;
     overflow: hidden;
 }
 
 .app-card:hover {
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    border-color: #d0d7ff;
+    box-shadow: 0 6px 20px rgba(124,58,237,0.15);
+    border-color: #7c3aed;
 }
 
-.app-card.status-online  { border-left: 4px solid #51cf66; }
+.app-card.status-online  { border-left: 4px solid #10b981; }
 .app-card.status-stopped { border-left: 4px solid #adb5bd; }
-.app-card.status-errored { border-left: 4px solid #ff6b6b; }
+.app-card.status-errored { border-left: 4px solid #ef4444; }
 .app-card.status-launching { border-left: 4px solid #ffd43b; }
-.app-card.status-unknown { border-left: 4px solid #dee2e6; }
+.app-card.status-unknown { border-left: 4px solid #2d2d5e; }
 
 /* Заголовок карточки */
 .app-card-header {
@@ -2259,7 +2282,7 @@ select {
     width: 28px;
     height: 28px;
     border-radius: 8px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
     color: #fff;
     font-size: 12px;
     font-weight: 700;
@@ -2271,7 +2294,7 @@ select {
 .app-card-name {
     font-size: 16px;
     font-weight: 700;
-    color: #222;
+    color: #e2e8f0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2314,7 +2337,7 @@ select {
 }
 
 .app-metric {
-    background: #f8f9fa;
+    background: #0a0a1a;
     border-radius: 8px;
     padding: 8px 10px;
     text-align: center;
@@ -2331,21 +2354,21 @@ select {
 .app-metric-value {
     font-size: 14px;
     font-weight: 700;
-    color: #333;
+    color: #e2e8f0;
     font-family: 'Monaco', 'Courier New', monospace;
 }
 
 /* Путь к скрипту */
 .app-script-path {
     font-size: 12px;
-    color: #868e96;
+    color: #94a3b8;
     font-family: 'Monaco', 'Courier New', monospace;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom: 14px;
     padding: 6px 10px;
-    background: #f8f9fa;
+    background: #0a0a1a;
     border-radius: 6px;
 }
 
@@ -2364,10 +2387,10 @@ select {
 
 .app-btn {
     padding: 9px 12px;
-    border: 1.5px solid #dee2e6;
+    border: 1.5px solid #2d2d5e;
     border-radius: 10px;
-    background: #fff;
-    color: #495057;
+    background: #12122a;
+    color: #94a3b8;
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
@@ -2394,40 +2417,40 @@ select {
 
 /* Открыть — акцентная */
 .app-btn.btn-open {
-    border-color: #667eea;
+    border-color: #7c3aed;
     color: #fff;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    box-shadow: 0 2px 8px rgba(102,126,234,0.3);
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
+    box-shadow: 0 2px 8px rgba(124,58,237,0.3);
 }
 .app-btn.btn-open:hover {
-    box-shadow: 0 4px 14px rgba(102,126,234,0.45);
+    box-shadow: 0 4px 14px rgba(124,58,237,0.45);
     transform: translateY(-1px);
 }
 
 /* Логи */
-.app-btn.btn-logs    { border-color: #cc5de8; color: #862e9c; }
-.app-btn.btn-logs:hover    { background: #f8f0fc; }
+.app-btn.btn-logs    { border-color: #a855f7; color: #a855f7; }
+.app-btn.btn-logs:hover    { background: #1e1e3f; }
 
 /* Старт */
-.app-btn.btn-start   { border-color: #51cf66; color: #2f9e44; }
-.app-btn.btn-start:hover   { background: #ebfbee; }
+.app-btn.btn-start   { border-color: #10b981; color: #10b981; }
+.app-btn.btn-start:hover   { background: #0f1f1a; }
 
 /* Стоп */
-.app-btn.btn-stop    { border-color: #adb5bd; color: #495057; }
-.app-btn.btn-stop:hover    { background: #f1f3f5; }
+.app-btn.btn-stop    { border-color: #2d2d5e; color: #94a3b8; }
+.app-btn.btn-stop:hover    { background: #1e1e3f; }
 
 /* Рестарт */
-.app-btn.btn-restart { border-color: #339af0; color: #1971c2; }
-.app-btn.btn-restart:hover { background: #e7f5ff; }
+.app-btn.btn-restart { border-color: #3b82f6; color: #3b82f6; }
+.app-btn.btn-restart:hover { background: #0f1729; }
 
 /* Удалить — иконка-кнопка */
 .app-btn.btn-delete {
-    border-color: #ff6b6b;
+    border-color: #ef4444;
     color: #c92a2a;
     padding: 9px 11px;
     flex-shrink: 0;
 }
-.app-btn.btn-delete:hover  { background: #fff5f5; }
+.app-btn.btn-delete:hover  { background: #1a0a0a; }
 
 /* Модальное окно логов */
 .logs-modal-overlay {
@@ -2540,17 +2563,17 @@ select {
     font-size: 11px;
     font-weight: 700;
     font-family: 'Monaco', 'Courier New', monospace;
-    color: #667eea;
-    background: #eef0ff;
+    color: #a855f7;
+    background: #1e1e3f;
     padding: 2px 7px;
     border-radius: 6px;
-    border: 1px solid #c5cbf5;
+    border: 1px solid #2d2d5e;
 }
 
 /* Блок предупреждения для errored-приложений */
 .app-error-hint {
-    background: #fff5f5;
-    border: 1px solid #ffc9c9;
+    background: #1a0a0a;
+    border: 1px solid #ef4444;
     border-radius: 10px;
     padding: 10px 14px;
     margin-bottom: 12px;
@@ -2565,14 +2588,14 @@ select {
 /* Кнопка "Починить" */
 .app-btn.btn-fix {
     border-color: #fd7e14;
-    color: #d9480f;
-    background: #fff4e6;
+    color: #fd7e14;
+    background: #1a150a;
     font-size: 12px;
     padding: 6px 10px;
     margin-left: auto;
     flex-shrink: 0;
 }
-.app-btn.btn-fix:hover { background: #ffe8cc; }
+.app-btn.btn-fix:hover { background: #2a1f0a; }
 
 @media (max-width: 768px) {
     .tab-content.active {

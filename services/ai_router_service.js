@@ -1,11 +1,11 @@
 const fetch = require('node-fetch');
 
-const AI_ROUTER_URL = 'https://ai.pro-talk.ru/api/router';
+const AI_ROUTER_URL = 'https://ai.chatforyou.ru/api/router';
 
 async function callAI(chatId, authToken, model, messages, tools, userEmail) {
     const payload = {
         base_url: "https://openrouter.ai/api/v1/chat/completions",
-        platform: "ProTalk",
+        platform: "ChatForYou",
         user_email: userEmail,
         model: model,
         messages: messages,
